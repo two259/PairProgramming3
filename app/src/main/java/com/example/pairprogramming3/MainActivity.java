@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         pictureButton = findViewById(R.id.pictureButton);
         picture = findViewById(R.id.imageView);
-        //myCanvas = (MyCanvas) findViewById(R.id.myCanvas);
+        myCanvas = (MyCanvas) findViewById(R.id.myCanvas);
         touchListener = new TouchListener(this);
         myCanvas.setOnTouchListener(touchListener);
         pictureButton.setOnClickListener(new View.OnClickListener() {
